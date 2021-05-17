@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @trojanzhex
+# @Nexonhex
 
 
 from pyrogram import filters
@@ -24,8 +24,8 @@ async def cb_handler(client, query):
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("HELP", callback_data="help_data"),
                 InlineKeyboardButton("ABOUT", callback_data="about_data")],
-            [InlineKeyboardButton("⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/TroJanzHEX")]
-        ])
+            [InlineKeyboardButton("Nexon Projects", url="https://t.me/Nexonhex")]
+        ])i
 
         await query.message.edit_text(
             Script.START_MSG.format(query.from_user.mention),
@@ -40,7 +40,7 @@ async def cb_handler(client, query):
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("BACK", callback_data="start_data"),
                 InlineKeyboardButton("ABOUT", callback_data="about_data")],
-            [InlineKeyboardButton("⭕️ SUPPORT ⭕️", url="https://t.me/TroJanzSupport")]
+            [InlineKeyboardButton("Nexon Projects", url="https://t.me/Nexonhex")]
         ])
 
         await query.message.edit_text(
@@ -56,7 +56,7 @@ async def cb_handler(client, query):
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("BACK", callback_data="help_data"),
                 InlineKeyboardButton("START", callback_data="start_data")],
-            [InlineKeyboardButton("SOURCE CODE", url="https://github.com/TroJanzHEX/Streams-Extractor")]
+            [InlineKeyboardButton("Dev", url="https://t.me/Hexrider")]
         ])
 
         await query.message.edit_text(
