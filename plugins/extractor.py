@@ -25,8 +25,8 @@ async def confirm_dwnld(client, message):
             "**What you want me to do??**",
             quote=True,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton(text="DOWNLOAD and PROCESS", callback_data="download_file")],
-                [InlineKeyboardButton(text="CANCEL", callback_data="close")]
+                [InlineKeyboardButton(text="Download and Process", callback_data="download_file")],
+                [InlineKeyboardButton(text="Cancel", callback_data="close")]
             ])
         )
     else:
